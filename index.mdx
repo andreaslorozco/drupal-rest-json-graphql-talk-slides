@@ -1,11 +1,24 @@
-export { code as theme } from '@mdx-deck/themes'
+import future from '@mdx-deck/themes/future'
+import highlight from '@mdx-deck/themes/syntax-highlighter-prism'
+import { Notes } from 'mdx-deck';
 
-# REST, GraphQL o JSONAPI
+export const themes = [
+  future,
+  highlight
+]
+
+# REST, GraphQL o JSON:API
 ## (qué no hacer)
 
 ---
 
-# ¿Por qué hablar de REST, de GraphQL, o de JSON:API?
+# ¿Por qué hablar de esto?
+
+<Notes>
+  <div>- Tendencia: Backend/Frontend desacoplado.</div>
+  <div>- Aprovechar bondades de sistemas de frontend.</div>
+  <div>- Separar concerns.</div>
+</Notes>
 
 ---
 
@@ -13,53 +26,100 @@ export { code as theme } from '@mdx-deck/themes'
   <img src="./img/js-frameworks.png"/>
 </div>
 
+<Notes>
+  <div>- JS frameworks se han reproducido como cucarachas.</div>
+</Notes>
+
+<!-- Credit: https://rubygarage.org/blog/best-javascript-frameworks-for-front-end -->
+
 ---
 
 <div>
   <img style={{ height: "350px"}} src="./img/be-frameworks.png"/>
-  <p>Credit: https://teqnation.com/top-7-backend-web-frameworks-to-use-in-2019/</p>
 </div>
+
+<Notes>
+  <div>- Existen frameworks en backend.</div>
+  <div>- Drupal anda por el mismo camino.</div>
+  <br></br>
+  <em style={{color: "black", background: "yellow", float: "right", padding: "10px"}}>Sigue: Edgar.</em>
+</Notes>
+
+<!-- Credit: https://teqnation.com/top-7-backend-web-frameworks-to-use-in-2019/ -->
 
 ---
 
 <div>
   <img style={{ height: "700px"}} src="./img/headless-vs-decoupled.png"/>
-  <p>Credit: https://www.coredna.com/blogs/headless-vs-decoupled-cms</p>
 </div>
+
+<Notes>
+  <div>-Concepto</div>
+  <br></br>
+  <em style={{color: "black", background: "yellow", float: "right", padding: "10px"}}>Sigue: Edgar.</em>
+</Notes>
+
+<Notes>
+  <div></div>
+</Notes>
+
+<!-- Credit: https://www.coredna.com/blogs/headless-vs-decoupled-cms -->
 
 ---
 
 <div>
   <img style={{ height: "700px"}} src="./img/headless.gif"/>
-  <p>Credit: https://jobjorisenmarieke.nl/kop-op</p>
 </div>
+
+
+<Notes>
+  <div></div>
+  <div></div>
+</Notes>
+
+
+<!-- Credit: https://jobjorisenmarieke.nl/kop-op -->
 
 ---
 
 # REST API
 
-* Que es REST / REST API?
+<Notes> ESto le toca a Andreas</Notes>
+
+* Que es REST / Restful web services en core? 
+* Pasos en el Drupal
+* Enabling endpoints
+* Creating endpoints
 * Efficiency
-* Documentation, API Explorability and Schema'
+* Documentation, API Explorability and Schema
 * Reading Data
 * Writing data
+
+
+<Notes>
+  <div></div>
+  <div></div>
+</Notes>
+
 
 ---
 
 # JSON:API
 
 * Que es JSON:API / JSON:API en core?
+* Steps in drupal?
 * Efficiency
-* Documentation, API Explorability and Schema
+* Documentation. 
+* API Explorability and Schema
+* Módulos opcionales
 * Reading data
 * Writing data
-* 
 
 ---
 
 # GraphQL
 
-* Que es GraphQL / modulo contribuido
+* Que es GraphQL / GraphQL módulo contribuído? 
 * Efficiency
 * Documentation, API Explorability and Schema
 * Reading data
@@ -80,19 +140,28 @@ export { code as theme } from '@mdx-deck/themes'
 
 ---
 
-# https://dccr19-guestbook.netlify.com/
-## QR CODE MAYBE??
+# [dccr19-gb<br />.netlify.com](dccr19-gb.netlify.com)
+
+![](./img/qr.png)
 
 ---
 
-# TLDR ACCORDING TO DOCS: TL;DR
+# TL;DR:s ACCORDING TO DOCS.
 
 **Choose REST if you have non-entity data you want to expose. In all other cases, choose JSON:API.**
 
 ---
 
-```jsx
-<CodeSnippet />
+# Módulos de interés
+
+- https://dri.es/headless-cms-rest-vs-jsonapi-vs-graphql
+- 
+
+---
+
+```js
+console.log(x);
+
 ```
 
 ---
